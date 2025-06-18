@@ -7,7 +7,15 @@ I've also included some other sample scripts such as `get_nodeUsage.py`, which h
 
 - **get\_stats.py**: Collects per-VM metrics (CPU, disk I/O, network usage).
 - **get\_ClusterStats.py**: Collects per-node metrics (CPU, memory, drive health and temperature).
+- **get\_stats-basicauth.py** / **get\_ClusterStats-basicauth.py** – Variants of the main metric collectors using Basic Auth instead of session tokens.
 - **start\_metric\_fetch.sh**: Entrypoint script to handle session refresh and sequential execution of both metric collectors.
+- **gen\_sessionID.py** – Generates a session token stored at `session/sessionLogin.p`.
+- **kill\_sessionID.py** – Invalidates the current session.
+- **run\_GenDevSession.sh** – Shell wrapper to generate a dev session token.
+- **run\_KillDevSession.sh** – Shell wrapper to kill a dev session.
+- **get\_nodeUsage.py** – Collects node-level CPU/memory metrics, uses session-based login.
+- **run\_getSnapshotReportAll.sh** – Optional utility for fetching snapshot-related data or reports (custom functionality).
+
 
 ## Requirements
 
