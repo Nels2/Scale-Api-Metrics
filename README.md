@@ -66,7 +66,6 @@ Metrics are written to InfluxDB:
 
 - Sessions are stored in: `session/sessionLogin.p`
 - If older than 12 hours, a new session is generated automatically
-- Requires `gen_sessionID.py` and `kill_sessionID.py` to be present and functional
 
 ## Cron Example
 
