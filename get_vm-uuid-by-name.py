@@ -6,6 +6,12 @@ import json
 import sys
 import pickle
 
+####
+# This script is meant to be used with RMMs so you can add a URL Action for example to open the Scale Console of a VM using its UUID. 
+# for example uuid: 1234 would be: https://scale.domain.org/console.html?vm=1234
+# I personally did this with Tactical RMM. 
+####
+
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning) #ignore cert stuff. this is an internal job so its ok.
 host = ""
